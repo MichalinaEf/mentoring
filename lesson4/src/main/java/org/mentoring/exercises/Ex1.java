@@ -13,6 +13,8 @@ public class Ex1 {
                 "\nPodejścia te różnią się między sobą zapisem oraz możliwościami, jakie dostarczają:" +
                 "\nW pętli while brakuje automatyzacji pewnych zadań. " +
                 "\nMusimy bowiem ręcznie zadbać o to, aby licznik był zwiększany o, np. wartość 1." +
-                "\nW pętli while możemy stworzyć program, który oczekuje od użytkownika pewnych odpowiedzi, dopóki nie poda on poprawnej \n");
+                "\nW pętli while możemy stworzyć program, który oczekuje od użytkownika pewnych odpowiedzi, " +
+                "\ndopóki nie poda on poprawnej" +
+                "\nPętle for wykorzystujemu tam, gdzie mamy znany licznik \n");
     }
 }
