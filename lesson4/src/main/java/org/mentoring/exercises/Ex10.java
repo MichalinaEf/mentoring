@@ -42,14 +42,14 @@ public class Ex10 {
             System.out.println("Enter initial fuel level");
             initFuelLevel = sc.nextInt();
         }
-        while (initFuelLevel > 4999 && initFuelLevel < 30001);
+        while (initFuelLevel < 5000 || initFuelLevel > 30000);
 
 
 
         do{
             System.out.println("Enter number of astronauts");
             numOfAstronauts = sc.nextInt();}
-        while (numOfAstronauts>0 && numOfAstronauts<=7);
+        while (numOfAstronauts<0 || numOfAstronauts>7);
 
         int fuelLevel = initFuelLevel;
         rocketAltitude = 0;
