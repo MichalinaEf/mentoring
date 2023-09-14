@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class MainLoop {
     static Scanner sc = new Scanner(System.in);
-    private final static int NUMBER_OF_EXERCISES = 11;
+    private final static int NUMBER_OF_EXERCISES = 15;
 
     public static void main(String[] args) {
         int optionValue;
@@ -62,6 +62,18 @@ public class MainLoop {
                 break;
             case 11:
                 Ex11.ex11();
+                break;
+            case 12:
+                Ex12.ex12();
+                break;
+            case 13:
+                Ex13.ex13();
+                break;
+            case 14:
+                Ex14.ex14();
+                break;
+            case 15:
+                Ex15.ex15();
                 break;
             default:
                 System.out.println("W tej lekcji było tylko " + NUMBER_OF_EXERCISES +" zadań");
