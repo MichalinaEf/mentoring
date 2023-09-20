@@ -1,5 +1,7 @@
 package org.mentoring.exercises;
 
+import org.mentoring.exercises.exercise9.Deck;
+
 public class Ex9 {
 
     public static void ex9(){
@@ -19,5 +21,7 @@ public class Ex9 {
                 "\nNastępnie przechodząc pętlami, łącz je ze sobą i twórz obiekty.\n");
         System.out.println("Odpowiedź:");
         System.out.println("");
+        Deck deck = new Deck();
+        deck.createCards();
     }
 }

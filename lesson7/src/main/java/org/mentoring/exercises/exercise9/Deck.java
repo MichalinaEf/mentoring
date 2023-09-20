@@ -1,5 +1,6 @@
 package org.mentoring.exercises.exercise9;
 
+import java.util.ArrayList;
 import java.util.List;
 
 //Zad. 9 (T)
@@ -18,9 +19,25 @@ import java.util.List;
 // Aby utworzyć taką kombinację, utwórz dwie niezależne listy - w pierwszej przechowuj możliwe figury,
 // a w drugiej wartości. Następnie przechodząc pętlami, łącz je ze sobą i twórz obiekty.
 public class Deck {
-    public List<String> cardValues = List.of("A","2","3","4","5","6","7","8","9","10","J","Q","K");
-    public List <String> cardSuits = List.of("Clubs","Diamonds","Hearts","Spades");
+    private List<String> cardValues = List.of("A","2","3","4","5","6","7","8","9","10","J","Q","K");
+    private List <String> cardSuits = List.of("Clubs","Diamonds","Hearts","Spades");
 
+    public List <Card> cards = new ArrayList<>();
 
-
+    public List<Card> createCards (){
+        int cardNumber =0;
+        for (int i = 0; i < (cardSuits.size()-1); i++) {
+            for (int j = 0; j < (cardValues.size()-1); j++) {
+                String value = cardValues.get(i);
+                String suit = cardSuits.get(j);
+                Card card = new Card(value,suit);
+                cards.add(cardNumber,card);
+                cardNumber++;
+            }
+        }
+        for (Card card: cards) {
+            System.out.println(card);
+        }
+        return cards;
+    }
 }
