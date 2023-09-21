@@ -1,6 +1,9 @@
 package org.mentoring.exercises;
 
+import org.mentoring.exercises.exercise9.Card;
 import org.mentoring.exercises.exercise9.Deck;
+
+import java.util.List;
 
 public class Ex9 {
 
@@ -22,6 +25,12 @@ public class Ex9 {
         System.out.println("Odpowiedź:");
         System.out.println("");
         Deck deck = new Deck();
-        deck.createCards();
+        List<Card> cards =  deck.createCards();
+        deck.shuffleCards(cards);
+        deck.cardDrawing(cards);
+        deck.lastCard(cards);
+        deck.shuffleCards(cards);
+        deck.cardDrawing(cards);
+        deck.lastCard(cards);
     }
 }
