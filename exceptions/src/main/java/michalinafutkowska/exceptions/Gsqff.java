@@ -1,4 +1,4 @@
 package michalinafutkowska.exceptions;
 
-public class Gsq {
+public class Gsqff {
 }
