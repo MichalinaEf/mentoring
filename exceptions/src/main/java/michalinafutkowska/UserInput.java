@@ -9,12 +9,12 @@ public class UserInput {
 
     private Scanner sc = new Scanner(System.in);
 
-    public FileHandler createFile()  {
+    public FileHandler createFile() throws StringIsNullException, OutOfRangeException{
 
 
         System.out.println("Enter a file path");
         String filePath = sc.nextLine();
-        if(filePath == null) {
+        if(filePath.length() == 0) {
             throw new StringIsNullException("You didn't enter a file path");
         }
 
