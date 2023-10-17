@@ -1,0 +1,79 @@
+Zad. 1
+Przygotuj wyrażenie regularne, który sprawdzi, czy string zawiera tylko i wyłącznie zbiór następujących znaków: (a-z, A-Z i 0-9).
+       "[A-z]|[0-9]"gm
+
+Zad. 2
+Sprawdź, czy string rozpoczyna się pojedynczą cyfrą: 0 lub literą ‘b’.
+    " b| 0"gm
+
+Zad. 3
+Sprawdzaj, czy podany string zawiera ciąg dowolnych małych liter rozdzielonych znakiem _, np. aab_cbbbc
+    "[a-z]{3}_[a-z]{2}"gm
+
+Zad. 4
+Znajdź słowa, które kończą się co najmniej dwiema literami ‘s’, np.
+hiss
+hisssss
+His
+    "s{1,} "gm
+
+Zad. 5
+Znajdź stringa, który zawiera co najmniej sześć liter i nie zawiera litery ‘A’, np.
+Python should match
+unique New York
+ale niepasujące:
+Regular Expressions
+ALOHA
+    " \w{6,}[^a] "gm
+
+Zad. 6
+W stringu HTML, wszystkie elementy otoczone są pewnymi znacznikami HTML (<p>Twój tekst</p>, <h1>Twój tekst2</h1> itd.).
+Każdy znacznik ma następującą postać: <znacznik>Tekst</znacznik>.
+
+Twoje zadanie to określić, czy podany tekst jest prawidłowym elementem kodu HTML, czyli czy składa się z odpowiednio skonstruowanych znaczników wraz z dowolnym tekstem pomiędzy nimi. Trudność, jaką możesz tutaj napotkać, to konieczność ominięcia, tzw. chciwego przeszukiwania, które omówiliśmy w szkoleniu.
+
+Przykłady:
+<span>Yowza! That’s a great regular expression.</span> - powinno wyszukać cały tekst
+<p>Learn about regular expressions here.</p> <p>You\'re going to love them!</p> - powinno wyszukać:
+<p>Learn about regular expressions here.</p>
+<p>You\'re going to love them!</p>
+
+Nieprawidłowe przykłady:
+I'm not HTML!!
+<p>Incomplete HTML
+
+Zad 7.
+Zakładając, że masz dostęp do adresu w formacie: username@companyname.com, napisz program, który wydrukuje nazwę firmy z takiego adresu. Zarówno nazwa użytkownika jak i nazwa firma może składać się tylko i wyłącznie z liter.
+
+Zad 8.
+Napisz program, który przyjmować będzie dowolny ciąg znaków oddzielonych spacją. Wyodrębnij z niego tylko i wyłącznie te wyrazy, które są liczbami.
+
+Przykładowo dla poniższych danych wejściowych:
+2 cats and 3 dogs
+
+Zwróć:
+[‘2’, ‘3’]
+
+Zad. 9
+Napisz wyrażenie, które sprawdza, czy liczba zmiennoprzecinkowa podana przez użytkownika ma poprawny format. Na przykład liczba 123,2341515132135 lub -10 są poprawne, ale 18-12 czy 123, (przecinek na końcu) już nie.
+
+Zad. 10
+Efektem zbierania pomiarów temperatury okazał być się plik tekstowy, który zawiera datę pomiaru oraz wartość. W jaki sposób możliwe jest wydzielenie tylko dat w takiej sytuacji? Poniżej znajduje się fragment przykładowych danych wejściowych.
+
+"2019-03-11: 23.5, 19/03/12: 12.7, 2019.03.13: 11.1, 2019-marzec-14: 14.3"
+
+Zad. 11
+Sprawdź, czy podany string jest zapisem koloru w systemie szesnastkowym (HEX).
+string musi się zaczynać znakiem #
+następnie musi zawierać 3 lub 6 (ale nie 4 lub 5) znaki kodu szesnastkowego pisane małą lub wielką literą;
+
+Przykłady:
+#ab4
+#AB4B72
+
+Błędne przykłady:
+#ab43
+#aaaaaaaaa
+#ahl
+
+
